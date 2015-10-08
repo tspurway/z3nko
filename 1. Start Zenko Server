@@ -1,3 +1,3 @@
-cd ~/Documents/zenko
+cd ~/Documents/z3nko
 git pull
 python server.py
