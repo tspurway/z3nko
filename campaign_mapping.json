@@ -127,6 +127,9 @@
 		},
 		"Ars Technica": {
 			"title_must_match": ["Ars Technica"]
+		},
+		"Details": {
+			"title_must_match": ["Details"]
 		}
 	},
 	"Mozilla": {
