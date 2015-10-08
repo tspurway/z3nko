@@ -13,7 +13,7 @@ import json, cPickle
 from datetime import datetime, timedelta
 
 import psycopg2
-from login_reloaded import login_string #login details, not committed
+from login import login_string #login details, not committed
 
 verbose = False #debug setting
 
