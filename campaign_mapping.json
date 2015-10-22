@@ -132,6 +132,11 @@
 			"title_must_match": ["Details"]
 		}
 	},
+	"Time Inc": {
+		"Fortune": {
+			"title_must_match": ["Fortune"]
+		}
+	},
 	"Mozilla": {
 		"Firefox Add-ons": {
 			"target_url_must_match": ["https://addons.mozilla.org/firefox/?utm_source=directory-tiles&utm_medium=tiles&utm_content=Generaladdons"]
