@@ -1,4 +1,9 @@
 {
+	"BarkBox": {
+		"All campaigns": {
+			"title_must_match": ["BarkBox"]
+		}
+	},
 	"CLIQZ": {
 		"All campaigns": {
 			"title_must_match": ["CLIQZ"]
