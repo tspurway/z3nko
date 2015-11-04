@@ -31,6 +31,7 @@
                     <thead>
                         <th>Campaign</th>
                         <th>Actions</th>
+                        <th>Suggest</th>
                         <th># of Tiles</th>
                         <th># of Locales</th>
                         <th data-defaultsort="desc">Last Modified</th>
@@ -42,6 +43,18 @@
                             <td>
                                 <a role="button" class='btn btn-default' href='/impressions?pivot=date&client={{data.client}}&campaign={{campaign_name}}'>Show compiled data</a>&nbsp;
                                 <a role="button" class='btn btn-default' href='#{{campaign_name}}'>Select a specific tile</a>
+                            </td>
+                            <td>
+                              {% if info.suggested == info.tile_count %}
+                                 Yes
+                              {% else %}
+                                {% if info.directory == info.tile_count %}
+                                  No
+                                {% else %}
+                                  Suggested={{info.suggested}} <br>
+                                  Directory={{info.directory}}
+                                {% endif %}
+                              {% endif %}
                             </td>
                             <td>{{info.tile_count}}</td>
                             <td>{{info.locale_count}}</td>
@@ -68,6 +81,7 @@
                         <thead>
                             <th></th>
                             <th>Tile ID</th>
+                            <th>Suggest</th>
                             <th>Title</th>
                             <th>Target URL</th>
                             <th>Locale</th>
@@ -78,6 +92,13 @@
                             <tr>
                                 <td><input type="checkbox" onclick='multiple_tile_selection("{{tile.id}}")' class='multicheck' id='select_{{tile.id}}'></td>
                                 <td><a href="/impressions?pivot=date&id={{tile.id}}">{{tile.id}}</a></td>
+                                <td>
+                                  {% if tile.suggested %}
+                                    Yes
+                                  {% else %}
+                                    No
+                                  {% endif %}
+                                </td>
                                 <td>{{tile.title}}</td>
                                 <td>{{tile.target_url}}</td>
                                 <td>{{tile.locale}}</td>
