@@ -184,7 +184,7 @@ def build_tiles_database(data):
 						new_entry['client'], new_entry['campaign'] = match
 		
 		if 'client' not in new_entry:
-			print u"Uncategorized! {0} - {1} - {2}".format(new_entry['id'], new_entry['title'], new_entry['target_url'])
+			#print u"Uncategorized! {0} - {1} - {2}".format(new_entry['id'], new_entry['title'], new_entry['target_url'])
 			new_entry['client'] = new_entry['title']
 			new_entry['campaign'] = False
 			#continue
