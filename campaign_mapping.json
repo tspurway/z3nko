@@ -135,6 +135,14 @@
 		},
 		"Details": {
 			"title_must_match": ["Details"]
+		},
+		"GQ": {
+			"title_must_match": ["GQ"]
+		}
+	},
+	"EFF": {
+		"EFF": {
+			"title_must_match": ["EFF", "Electronic Frontier Foundation"]
 		}
 	},
 	"Time Inc": {
