@@ -120,6 +120,11 @@
 			"title_must_match": ["Cars.com", "cars.com"]
 		}
 	},
+	"Toms.com": {
+		"All Campaigns": {
+			"title_must_match": ["Toms.com", "toms.com"]
+		}
+	},
 	"Condé Nast": {
 		"Wired": {
 			"title_must_match": ["Wired", "WIRED"]
