@@ -141,6 +141,9 @@
 		"Details": {
 			"title_must_match": ["Details"]
 		},
+		"Allure": {
+			"title_must_match": ["Allure"]
+		},
 		"GQ": {
 			"title_must_match": ["GQ"]
 		}
