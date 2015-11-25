@@ -153,6 +153,11 @@
 			"title_must_match": ["EFF", "Electronic Frontier Foundation"]
 		}
 	},
+	"Jet": {
+		"Jet": {
+			"title_must_match": ["Jet", "jet"]
+		}
+	},
 	"Time Inc": {
 		"Fortune": {
 			"title_must_match": ["Fortune"]
