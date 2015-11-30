@@ -155,7 +155,7 @@
 	},
 	"Jet": {
 		"Jet": {
-			"title_must_match": ["Jet", "jet"]
+			"title_must_match": ["Jet", "Jet.com"]
 		}
 	},
 	"Time Inc": {
@@ -164,6 +164,36 @@
 		}
 	},
 	"Mozilla": {
+		"Donate to Mozilla": {
+			"title_must_match": [
+				"An Mozilla spenden",
+				"Donate to Mozilla",
+				"Dona a Mozilla",
+				"Fai una donazione a Mozilla",
+				"Faites un don à Mozilla"
+		]
+		},
+		"Firefox for iOS": {
+			"title_must_match": [
+				"Firefox for iOS",
+				"Firefox für iOS",
+				"Firefox dla iOS",
+				"Firefox para iOS",
+				"Firefox pour iOS",
+				"Firefox для iOS"
+			]
+		},
+		"Get Smart On Tracking": {
+			"title_must_match": [
+				"Get Smart On Tracking",
+				"Devenez expert en pistage",
+				"Erfahren Sie mehr über Verfolgung",
+				"Sé un experto en rastreo",
+				"Fique esperto com o rastreamento",
+				"Узнайте больше об Отслеживании",
+				"Zrozum śledzenie"
+			]
+		},
 		"Firefox Add-ons": {
 			"target_url_must_match": ["https://addons.mozilla.org/firefox/?utm_source=directory-tiles&utm_medium=tiles&utm_content=Generaladdons"]
 		},
@@ -251,7 +281,7 @@
 			"title_must_match": ["Lightbeam"]
 		},
 		"Tracking Protection": {
-		    "target_url_must_match": ["https://www.mozilla.org/firefox/private-browsing/?utm_source=directory-tiles&utm_medium=tiles&utm_content=TPV1&utm_campaign=fx-fall-15"]
+				"target_url_must_match": ["https://www.mozilla.org/firefox/private-browsing/?utm_source=directory-tiles&utm_medium=tiles&utm_content=TPV1&utm_campaign=fx-fall-15"]
 		},
 		"Mozilla": {
 			"target_url_must_match": ["https://www.mozilla.com/en-US/?utm_source=directory-tiles&utm_medium=firefox-browser", "https://www.mozilla.org/en-US/?utm_source=directory-tiles&utm_medium=firefox-browser"]
@@ -286,7 +316,7 @@
 			]
 		},
 		"Mozilla Festival": {
-			"target_url_must_match": ["http://2014.mozillafestival.org/"]
+			"title_must_match": ["Mozilla Festival"]
 		},
 		"Mozilla Manifesto": {
 			"target_url_must_match": ["mozilla.org/about/manifesto", "https://www.mozilla.org/en-US/about/manifesto/"]
