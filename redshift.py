@@ -80,7 +80,8 @@ def build_tiles_cache(force_redownload=False):
 		
 		#get the tile data from the server
 		print "Refreshing tiles cache from remote server (will take ~2 seconds)...",
-		tile_data = query_new_database("SELECT * FROM tiles;", show_query=False)
+		query = "select *, adgroup_id IN (select distinct(adgroup_id) from adgroup_sites) as suggested from tiles;"
+		tile_data = query_new_database(query, show_query=False)
 		print "done"
 		
 		#now we have to build the tiles database

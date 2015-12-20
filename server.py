@@ -104,11 +104,17 @@ def show_creative_selection_page():
 		data['metadata'][campaign]['tile_count'] = 0
 		data['metadata'][campaign]['locale_count'] = set()
 		data['metadata'][campaign]['last_modified'] = datetime(1900, 1, 1)
+		data['metadata'][campaign]['suggested'] = 0
+		data['metadata'][campaign]['directory'] = 0
 		for tile in tiles:
 			data['metadata'][campaign]['tile_count'] += 1
 			data['metadata'][campaign]['locale_count'].update(tile['locale'])
 			if tile['created_at'] > data['metadata'][campaign]['last_modified']:
 				data['metadata'][campaign]['last_modified'] = tile['created_at']
+			if tile['suggested']:
+				data['metadata'][campaign]['suggested'] += 1
+			else:
+				data['metadata'][campaign]['directory'] += 1
 		data['metadata'][campaign]['locale_count'] = len(data['metadata'][campaign]['locale_count'])
 	
 	#remove Uncategorized if empty
